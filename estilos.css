@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  #flor {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  #flor::before, #flor::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  #flor::before {
+    top: -60px;
+    left: 0;
+  }
+  
+  #flor::after {
+    top: 60px;
+    left: 0;
+  }
